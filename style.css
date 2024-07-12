@@ -1,0 +1,844 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+    display: none;
+    
+}
+
+.main-container{
+    min-height: 100vh;
+    max-width: 100vw;
+    font-family: 'Roboto';
+    position: relative;
+    background-color: rgb(252, 251, 250);
+    
+}
+/*top-header*/
+.main-container .top-header{
+    height: 3em;
+    width: 100%;
+    position: relative;
+    padding: 2px 0;
+    text-align: center;
+    background-color: #8a7350;
+}
+.main-container .top-header h3{
+    margin: 0 auto;
+    padding: 9px;
+    color: white;
+}
+
+/*navbar*/
+.navbar{
+    background-color:black;
+    columns: #ffffff;
+    height: 5.5em;
+    width: 100%;
+    position:sticky;
+    top:0;
+    z-index: 99;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-container .navbar:hover{
+    opacity: 0.9;
+}
+.main-container .navbar .sub-navbar{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding: 5px 10px;
+    margin-left: 10px;
+    gap:25px;
+    
+ 
+}
+.main-container .navbar .sub-navbar img{
+    object-fit: cover;
+    object-position: center;
+    background-color: white;
+    cursor: pointer;
+}
+.main-container .navbar .new{
+
+    font-size:1em;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 1em;
+    cursor: pointer;
+    
+    
+}
+.main-container .navbar .new .h4{
+    width: 100%;
+
+    position: relative;
+}
+.main-container .navbar .new .h4::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 3px;
+    width: 100%;
+    background-color: #8a7350;
+}
+ 
+.main-container .navbar .sub2-navbar{
+
+   
+    
+    height: 5.5em;
+    width: 25%;
+    display: flex;
+    align-items: center;
+  
+
+}
+.main-container .navbar .sub2-navbar button{
+    width: 40%;
+    padding: 12px 20px;
+    background-color: black;
+    border: 1px solid white;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+    
+}
+
+.main-container .navbar .sub2-navbar button {
+    text-align: center;
+}
+.main-container .navbar .sub2-navbar button h2{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: white;
+    padding: 0 3px;
+}
+.main-container .navbar .sub2-navbar button i{
+    margin-right: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+.main-container .navbar .sub2-navbar img{
+    color: white;
+    border: 1px solid white;
+}
+.sub2-navbar .fa-magnifying-glass{
+    font-size: 18px;
+    
+}
+.sub2-navbar .fa-heart,.fa-cart-shopping,.fa-user{
+    font-size: 20px;
+}
+.sub2-navbar .icons{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.sub2-navbar .icons i{
+    cursor: pointer;
+}
+/*block below navbar*/
+header{
+    height: 4em;
+    width: 100%;
+    background-color: #092444;
+}
+header h3,p{
+    color: white;
+    text-align: center;
+}
+header p{
+    font-size: 14px;
+}
+header h3{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+
+/*hero-section*/
+.hero-section{
+    width: 100%;
+    height: 544px;
+    background-color: bisque;
+    background-image: url('hero-img.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.hero-section .hero-message{
+    height: 350px;
+    width: 450px;
+    
+    position: absolute;
+    left: 0;
+    top:15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+
+.hero-message h1{
+    font-size: 40px;
+    line-height: 44px;
+    padding: 10px;
+}
+.hero-message h2{
+    font-size: 24px;
+    line-height: 31px;
+    color:#191919;
+}
+.hero-message .men-women-kids{
+    height: 20%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+
+}
+.hero-message .men-women-kids a{
+    text-decoration: none;
+    color:white;
+    margin-top: 10px;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color:black ;
+    
+}
+/*Hero-video*/
+
+.video{
+    width: 100%;
+    height: 544px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 75px;
+    overflow: hidden;
+}
+.video .autovideo{
+    width: 100%;
+    
+}
+.video .autovideo video{
+    width: 100%;
+    border: none;
+    outline: none;
+    
+}
+.video .text-wrap{
+    height: 350px;
+    width: 450px;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    bottom: calc(350px - 50%);
+   
+    
+    
+}
+.video .text-wrap .text-mess{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:last baseline;
+    margin-left: -55px;
+ 
+}
+.video .text-wrap .text-mess button{
+    margin-top: 16px;
+    padding: 10px 20px;
+    font-size: medium;
+    font-weight: 800;
+    letter-spacing: 0.32px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    text-align: center;
+}
+.video .text-wrap .text-mess h1{
+    font-size: 48px;
+    line-height: 44px;
+   
+   
+}
+.video .text-wrap .text-mess h2{
+    font-size: 24px;
+    margin-top: 4px;
+    line-height: 31px;
+    font-weight: 400;
+    color:#191919;
+    
+}
+/*section2 circular*/
+.main-circular{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 250px;
+    width: 100%;
+    font-family: 'Roboto' ;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.main-circular .circular{
+    height: 200px;
+    width: 80%;
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+.main-circular .circular div{
+    height: 120px;
+    width: 120px;
+    border: 5px solid #efa332;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    
+}
+.main-circular .circular div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    padding: 1px;
+}
+.main-circular .circular div h5{
+    font-size: 12px;
+    font-weight: 800;
+    white-space: nowrap;;
+}
+
+/*section-3 virat*/
+.hero-virat{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    background-image: url("virat-img.webp");
+    background-size: cover;
+    font-family: 'Roboto' ;
+    position: relative;
+    
+}
+
+.hero-virat .virat-text{
+    height: 350px;
+    width: 600px;
+    
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.hero-virat .virat-text button{
+    
+    margin-top: 16px;
+    padding: 10px 20px;
+    font-size: medium;
+    font-weight: 800;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    letter-spacing: 0.32px;
+    cursor: pointer;
+}
+.hero-virat .virat-text h1{
+   font-size: 48px;
+   line-height: 40px;
+
+}
+.hero-virat .virat-text h2{
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 10px;
+    font-weight: 400;
+
+}
+.hero-virat .virat-text p{
+    font-size: 18px;
+    line-height: 24px;
+    word-spacing: 2px;
+    margin-top: 10px;
+}
+.Latest-in{
+    height: 55px;
+    width: 100%;
+    color: #191919;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 20px auto;
+    
+    font-family: 'Roboto';
+    
+}
+ .Latest-in h2{
+    font-size: 1.8em;
+    line-height: 2em;
+    color: #191919;
+    
+}
+/*two-main img*/
+
+.twomain-img{
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 870px;
+    width: 95%;
+    position: relative;
+    font-family: 'Roboto';
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.twomain-img .div1-img1{
+    height: 85%;
+    width: 785px;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}   
+.twomain-img .div1-img1 img{
+    height: 100%;
+    width: 100%;
+    
+}
+.twomain-img .div1-img1 button{
+    height: 2em;
+    width: 220px;
+    padding: 16px 20px;
+    color: white;
+    background-color: #191919;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 3px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+.twomain-img .div1-img1 h2{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 5px;
+
+}
+.twomain-img  .div1-img1 p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #191919;
+    margin-top: 5px;
+}
+
+
+/*Creaper part*/
+.creaper{
+    width: 100%;
+    height: 544px;
+    display: flex;
+    font-family: 'Roboto';
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 75px;
+    background-image: url("CREAPER.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.creaper .text-wrap{
+    height: 350px;
+    width: 450px;
+    text-align: left;
+    position: absolute;
+    left: 5%;
+    bottom: calc(350px - 60%);
+    
+}
+.creaper .text-wrap .text-mess button{
+    margin-top: 16px;
+    padding: 10px 20px;
+    font-size: medium;
+    font-weight: 800;
+    letter-spacing: 0.32px;
+    color: black;
+    outline: none;
+    background-color: white;
+    border: 1px solid white;
+    text-align: center;
+}
+.creaper .text-wrap .text-mess h1{
+    font-size: 48px;
+    line-height: 44px;
+    color: #ffffff;
+   
+}
+.creaper .text-wrap .text-mess h2{
+    font-size: 24px;
+    margin-top: 4px;
+    line-height: 31px;
+    font-weight: 400;
+    color:#ffffff;
+    
+}
+.creaper #btn2{
+    margin-left: 16px ;
+}
+
+/*recommended section*/
+
+.RECOMMENDED{
+    height: 100px;
+    width: 100%;
+    font-family: 'Roboto';
+    
+    color: black;
+    text-align: left;
+    padding:40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.RECOMMENDED h1{
+    font-size: 1.5em;
+    font-weight: 600;
+    
+}
+
+
+/*40% off part*/
+.fourty{
+    height: 600px;
+    width: 100%;
+    font-family: 'Roboto';
+    display: flex;
+    background-image: url("virat-img.webp");
+    background-size: cover;
+    font-family: 'Roboto' ;
+    position: relative;
+    background-color: #8a7350;
+    background-image: url("fourty.webp");
+    background-size: cover;
+    
+    margin-top: 75px;
+    margin-bottom: -30px;
+}
+.fourty .OFFMESSAGE{
+    width: 600px;
+    
+    color: white;
+    padding:5px;
+    margin-left: 10px;
+   
+}
+.fourty .OFFMESSAGE button{
+    margin-top: 16px;
+    padding: 10px 20px;
+    font-size: medium;
+    font-weight: 800;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    letter-spacing: 0.32px;
+    cursor: pointer;
+}
+
+
+/*footer*/
+.footer{
+    height: 540px;
+    width: 100%;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Roboto';
+}
+
+.footer .sub-footer1{
+    height: 75%;
+    width: 99%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+    
+
+}
+.footer .sub-footer1 .support ul{
+    list-style-type: none;
+}
+.footer .sub-footer1 .faq ul{
+    list-style-type: none;
+}
+
+.footer .sub-footer1 .about ul{
+    list-style-type: none;
+}
+.footer .sub-footer1 .support .sup{
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 27px;
+    text-align: start;
+}
+
+.footer .sub-footer1 .about .sup{
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 27px;
+    text-align: start;
+}
+.footer .sub-footer1 li{
+    font-size: 1em;
+    text-align: left;
+    letter-spacing: normal;
+    line-height: 24px;
+    color:#dfe0e1;
+    padding: 3px 0;
+    margin-top: 2px;
+}
+.footer .sub-footer1 .STAY{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    
+    gap:-20px;
+}
+.footer .sub-footer1 .STAY .upto{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    color: black;
+    margin-top: 40px;
+}
+
+.footer .sub-footer1 .STAY .explore{
+    height: 250px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+    margin-top: -80px;
+}
+.footer .sub-footer1 .STAY .explore .wap{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    text-align: start;
+}
+.footer .sub-footer1 .STAY .explore h2{
+    margin-top: 80px;
+    text-align: start;
+    color: #ffffff;
+
+}
+.footer .sub-footer1 .STAY .explore .trac{
+    height:60px;
+    width: 60px;
+    
+}
+.footer .sub-footer1 .STAY .explore .ssss {
+    height:60px;
+    width: 60px;
+}
+.footer .sub-footer1 .STAY .explore .trac img{
+    height: 60px;
+    width:60px;
+    object-fit: cover;
+    background-color: white;
+    border: 1px solid white;
+    padding: 1px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.footer .sub-footer1 .STAY .explore .ssss img{
+    height: 60px;
+    width:60px;
+    object-fit: cover;
+    background-color: white;
+    border: 1px solid white;
+    padding: 1px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.footer .sub-footer1 .STAY .upto .h3{
+    font-size: 20px;
+    line-height: 28px;
+    text-align: start;
+    color: white;
+    background-color: #181818;
+}
+.footer .sub-footer1 .STAY .upto .follow{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #181818;
+}
+.footer .sub-footer1 .STAY .upto .follow .fa-youtube,.fa-twitter,.fa-pinterest,.fa-instagram,.fa-facebook{
+    font-size: 30px;
+}
+
+.footer hr{
+    height: 3px;
+    width: 85%;
+}
+
+
+.sub-footer2{
+    height:25%;
+    width: 99%;
+    
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+    font-family: 'Roboto';
+}
+.sub-footer2 .cardss{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.sub-footer2 .indiabtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-footer2 .indiabtn button{
+    width: 140px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #181818;
+    color: #ffffff;
+    border: 1px solid white;
+}
+.footer .sub-footer2 .laspara{
+    font-size: 12px;
+    line-height: 16px;
+
+}
+.footer .sub-footer2 .laspara .imprintaa{
+    text-decoration: underline;
+    text-align: end;
+    
+}
+
+
+/*media queries*/
+@media only screen and (max-width:567px){
+    .main-container .top-header{
+        height: 2em;
+        text-align: center;
+        width: 100%;
+    }
+    .main-container .top-header h3{
+        margin:2px auto;
+        font-size: 12px;
+    }
+    .main-container .navbar{
+       height: 4em;
+
+    }
+    .main-container .navbar .sub-navbar img{
+        
+        
+        height: 45px;
+        width: 45px;
+        overflow: hidden;
+       
+        
+       
+    }
+    .main-container .navbar .sub-navbar .new{
+        display: none;
+    }
+    .main-container .navbar .sub2-navbar{
+        display: none;
+    }
+
+}
